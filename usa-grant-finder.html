@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USA Grant Finder</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the USA Grant Finder</h1>
-    <p>Find various grants available for projects across the United States.</p>
+    <header>
+        <h1>Find Your Grant</h1>
+    </header>
+    <main>
+        <form id="grant-form">
+            <label for="search">Search Grants:</label>
+            <input type="text" id="search" name="search" required>
+            <button type="submit">Search</button>
+        </form>
+        <section id="results"></section>
+    </main>
+    <footer>
+        <p>&copy; 2026 USA Grant Finder</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
