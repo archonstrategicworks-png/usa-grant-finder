@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USA Grant Finder</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #e8491d;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Find Your Grant</h1>
+        <h1>USA Grant Finder</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
     </header>
-    <main>
-        <form id="grant-form">
-            <label for="search">Search Grants:</label>
-            <input type="text" id="search" name="search" required>
-            <button type="submit">Search</button>
-        </form>
-        <section id="results"></section>
-    </main>
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a variety of services to help you find the right grants for your needs.</p>
+            <ul>
+                <li>Grant Research</li>
+                <li>Proposal Writing</li>
+                <li>Consultation Services</li>
+                <li>Application Review</li>
+            </ul>
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>What is a grant?</h3>
+            <p>A grant is a financial award given by an entity to support a specific project or initiative.</p>
+            <h3>How do I apply for a grant?</h3>
+            <p>You can apply for grants through various channels, including online applications and direct submissions.</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2026 USA Grant Finder</p>
+        <p>&copy; 2026 USA Grant Finder. All Rights Reserved.</p>
     </footer>
-    <script src="app.js"></script>
 </body>
 </html>
